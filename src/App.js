@@ -8,7 +8,7 @@ const App = () => {
   const [showCaptionContainer, setShowCaptionContainer] = useState(false);
   const [copyMessageVisible, setCopyMessageVisible] = useState(false);
 
-  const apiKey = 'A18L3T2eWRemxYIGwGlZsz'; // Replace with your Filestack API key
+  const apiKey = 'ADD-YOUR-API-KEY'; // Replace with your Filestack API key
   const client = new Client(apiKey);
 
   const openPicker = () => {
