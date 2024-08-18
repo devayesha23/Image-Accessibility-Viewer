@@ -1,38 +1,96 @@
-.App {
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/039/592/small_2x/sunrise-with-yellow-sky-and-cloud-with-bright-light-in-morning-sunset-sky-on-springtime-horizon-golden-hours-with-orange-sky-in-evening-summer-beautiful-natural-banner-for-all-season-background-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #444;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #e5533d;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#captionDisplayContainer {
+  display: block;
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#uploadedImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#captionDisplay {
+  font-size: 20px;
+  color: #333;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  background: #fff;
+  display: inline-block;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#copyButton {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4682b4;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+#copyButton:hover {
+  background-color: #3a6e91;
+  transform: translateY(-3px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#copyButton:active {
+  transform: translateY(1px);
+}
+
+#copyMessage {
+  display: block;
+  color: #4682b4;
+  margin-top: 15px;
+  font-size: 18px;
 }
